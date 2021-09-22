@@ -49,6 +49,7 @@ public class HomeControllerTest {
 		
 		String outputString = response.getContentAsString();
 		assertThat(outputString).isEqualTo("ok");
+		// assertEquals(200, response.getStatus()); // 200 is the ok value of http status!
 		assertEquals(HttpStatus.OK.value(), response.getStatus());
 	}
 	
